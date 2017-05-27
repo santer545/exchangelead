@@ -1,0 +1,13 @@
+.btn {
+	border-radius: 0;
+	@include transition(background-color 0.3s);
+	&-success {
+		background-color: rgba(51,51,51,1);
+		border: 1px solid #333;
+		
+		&:hover {
+			background-color: rgba(51,51,51,0.8);
+			border: 1px solid #333;
+		}
+	}
+}
