@@ -896,13 +896,6 @@
     .rss {
         overflow: hidden;
         height: 38px;
-        &:hover {
-            .rss-wrapper {
-                &:first-child {
-                    margin-top: -38px;
-                }
-            }
-        }
         &-wrapper {
             width: 38px;
             height: 38px;
@@ -911,7 +904,12 @@
             
             border-radius: 5px;
             text-align: center;
-            @include transition(margin-top 0.3s);
+            
+            &:hover {
+                svg {
+                    @include scale(0.8);
+                }
+            }
             &--inverse {
                 background-color: #f18052;
             }
@@ -925,7 +923,7 @@
             color: #fff;
             fill: currentColor;
             margin: 0 auto;
-            
+            @include transition(transform 0.3s);
         }
     }
     
@@ -1061,6 +1059,11 @@
     .dark .footer-widgets-wrap a {
         color: #CCC;
         display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        small {
+            line-height: 15px;
+        }
     }
     
     .dark .widget_archive li a,
