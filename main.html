@@ -11,10 +11,9 @@
 
 <body>
     <div class="wrapper">
-        <div id="top-bar" class="top-bar">
+        <!--<div id="top-bar" class="top-bar">
             <div class="container-fluid clearfix">
-                <!-- Top Social
-					============================================= -->
+                
                 <div id="top-social" class="top-social">
                     <ul class="clearfix">
                         <li><a href="#" class="si-facebook"><span class="ts-icon"><i class="fa fa-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
@@ -25,37 +24,40 @@
                         <li><a href="#" class="si-instagram"><span class="ts-icon"><i class="fa fa-instagram"></i></span><span class="ts-text">Instagram</span></a></li>
                     </ul>
                 </div>
-                <!-- Top Links
-					============================================= -->
+                
                 <div class="top-links" class="top-links">
-                    <button class="btn btn-success">Вход</button>
-                    <button class="btn btn-warning">Регистрация</button>
+                    <a href="autorize.html" class="btn btn-success">Вход</a>
+                    <a href="registration.html" class="btn btn-warning">Регистрация</a>
                 </div>
-                <!-- .top-links end -->
+                <
             </div>
-        </div>
-        <header class="header">
+        </div>-->
+        <header class="header clearfix">
             <header id="header" class="sticky-style-2">
                 <div class="container-fluid clearfix">
                     <!-- Logo
-				============================================= -->
+                ============================================= -->
                     <div id="logo">
-                        <a href="index.php" class="standard-logo"><img src="assets/images/logo.png" alt="Canvas Logo"></a>
+                        <a href="main.html" class="standard-logo"><img src="assets/images/logo.png" alt="Canvas Logo"></a>
                     </div>
                     <!-- #logo end -->
                     <ul class="header-extras">
-                        <li>
+                        <div class="top-links" class="top-links">
+                            <a href="autorize.html" class="btn btn-success">Вход</a>
+                            <a href="registration.html" class="btn btn-warning">Регистрация</a>
+                        </div>
+                        <!--<li>
                             <i class="i-plain icon-call nomargin fa fa-phone" aria-hidden="true"></i>
                             <div class="he-text">
                                 Call Us
-                                <span>(91) 22 54215821</span>
+                                <span><a href="tel:912254215821">(91) 22 54215821</a></span>
                             </div>
                         </li>
                         <li>
                             <i class="i-plain icon-line2-envelope nomargin fa fa-envelope-o" aria-hidden="true"></i>
                             <div class="he-text">
                                 Email Us
-                                <span>info@canvas.com</span>
+                                <span><a href="mailto:info@canvas.com">info@canvas.com</a></span>
                             </div>
                         </li>
                         <li>
@@ -64,15 +66,14 @@
                                 We'are Open
                                 <span>Mon - Sat, 10AM to 6PM</span>
                             </div>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
-                <div id="header-wrap" class="clearfix js-affix">
-                    <!-- Primary Navigation
-				============================================= -->
+                <!--<div id="header-wrap" class="clearfix js-affix">
+                    
                     <nav id="primary-menu" class="with-arrows style-2 center">
                         <div class="container-menu clearfix">
-                            <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+                            <div id="primary-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></div>
                             <ul class="sf-js-enabled clearfix">
                                 <li>
                                     <a href="#">
@@ -164,28 +165,43 @@
                                     </a>
                                 </li>
                             </ul>
-                            <!-- Top Search
-						============================================= -->
+                            
                             <div id="top-search">
-                                <a href="#" id="top-search-trigger"><i class="fa fa-search" aria-hidden="true"></i><i class="icon-line-cross"></i></a>
+                                <a href="#" id="top-search-trigger"><i class="fa fa-search" aria-hidden="true"></i><i class="fa fa-times hidden" aria-hidden="true"></i></a>
                                 <form action="search.php" method="get">
                                     <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
                                 </form>
                             </div>
-                            <!-- #top-search end -->
+                            
                         </div>
                     </nav>
-                    <!-- #primary-menu end -->
-                </div>
+                    
+                </div>-->
             </header>
         </header>
         <!-- Swiper -->
         <div class="swiper-container" id="slide-img">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(../assets/images/banner-1.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(../assets/images/banner-2.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(../assets/images/banner-1.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(../assets/images/banner-2.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(../assets/images/banner-1.jpg)">
+                    <div class="slider-caption">
+                        <p>Лучшее решение, чтобы развить бизнес</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image:url(../assets/images/banner-2.jpg)">
+                    <div class="slider-caption">
+                        <p>Лучшее решение, чтобы развить бизнес</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image:url(../assets/images/banner-1.jpg)">
+                    <div class="slider-caption">
+                        <p>Лучшее решение, чтобы развить бизнес</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image:url(../assets/images/banner-2.jpg)">
+                    <div class="slider-caption">
+                        <p>Лучшее решение, чтобы развить бизнес</p>
+                    </div>
+                </div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination swiper-pagination-white"></div>
@@ -193,23 +209,33 @@
             <div class="swiper-button-next swiper-button-white"></div>
             <div class="swiper-button-prev swiper-button-white"></div>
         </div>
-        <div class="promo-full">
-            <div class="container clearfix">
-                <h3 style="letter-spacing: 2px;">Заполните заявку и вы можете зарегистрироваться прямо сейчас</h3>
-                <a href="#" class="btn btn-lg btn-default">зарегестрироваться</a>
+        
+        <div class="about">
+            <div class="about-wrapper">
+                <p class="heading-h1 text-center heading-h1--inverse">Leads Exchange решает <span class="">2 ключевые задачи</span></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="text-center">Завести новых клиентов <br>или проекты</h2>
+                        <ul>
+                            <li>простой механизм получения лидов от проверенных компаний-партнеров</li>
+                            <li>оплата по факту сделки</li>
+                            <li>только горячие и актуальные лиды</li>
+                            <li>стоимость лидов гораздо ниже, чем в других каналах(контекстная реклама)</li>
+                            <li>простой поиск и фильтрация лидов по нужным критериям</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-center">Получить прибыль от<br> нецелевых лидов</h2>
+                        <p>Сколько нецелевых лидов вы получаете ежемесячно? Какова стоимость лида? Сколько денег уходит в пустую</p>
+                        <p>С помощью Leads Exchange вы можете получать прибыль с каждого нецелевого лида и окупать затраты на их привлечение</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="about" class="parallax-container" data-parallax="scroll" data-position="top" data-image-src="assets/images/banner-1.jpg" data-natural-width="1400" data-natural-height="900">
-            <div class="about-wrapper">
-                <h2>О проекте</h2>
-                <p>Первая в Украине система обмена лидами высокого качества в сфере web-разработки, маркетинга и mobile.</p>
-                <h3>Кому нужно воспользоваться возможностью?</h3>
-                <p>Система предназначена для web-студий и IT-компаний, которые:</p>
-                <ul>
-                    <li>ищут новых клиентов</li>
-                    <li>хотят делиться нецелевыми лидами и получать прибыль от сделки</li>
-                    <li>могут выполнить часть заказа и ищут подрядчика под определенные технологии</li>
-                </ul>
+        <div class="promo-full" data-parallax="scroll" data-position="top">
+            <div class="container clearfix">
+                <h3 style="letter-spacing: 2px;">получите бесплатную консультацию от менеджера службы поддержки</h3>
+                <a href="registration.html" class="btn btn-lg btn-default">перезвоните мне</a>
             </div>
         </div>
         <div class="container-fluid features">
@@ -345,10 +371,31 @@
                 <div class="swiper-button-prev swiper-button-white"></div>
             </div>
         </div>
-        <div class="section nobottommargin">
+        <!--<div class="js-numbers text-center numbers clearfix">
+            <p class="heading-h1 text-center">Статистика <span>Наша партнерская база - это:</span></p>
+            <div class="container-fluid">
+                <div class="col-md-3">
+                    <div class="counter ls1 t600" style="color: #D2D2D2;"><span class="js-numeral" data-from="0" data-to="50" data-speed="5000" data-refresh-interval="50">50</span></div>
+                    <h5>веб-студий</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter ls1 t600" style="color: #D2D2D2;"><span class="js-numeral" data-from="0" data-to="8000000" data-speed="5000" data-refresh-interval="150">8 000 000</span></div>
+                    <h5>грн - оборот заявок</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter ls1 t600" style="color: #D2D2D2;"><span>1000 +</span></div>
+                    <h5>новых проетов каждый месяц</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter ls1 t600" style="color: #D2D2D2;"><span class="js-numeral" data-from="0" data-to="159" data-speed="5000" data-refresh-interval="10">159</span></div>
+                    <h5>лидов в системе</h5>
+                </div>
+            </div>
+        </div>-->
+        <!--<div class="section nobottommargin">
             <h2 class="nobottommargin text-center">Какие проекты я смогу реализовать:</h2>
-        </div>
-        <div id="portfolio" class="portfolio grid-container portfolio-full clearfix">
+        </div>-->
+        <!--<div id="portfolio" class="portfolio grid-container portfolio-full clearfix">
             <article class="portfolio-item pf-media pf-icons">
                 <div class="portfolio-image">
                     <img src="assets/images/5.jpg" alt="The Atmosphere">
@@ -397,11 +444,11 @@
                     <span>Beijing, China</span>
                 </div>
             </article>
-        </div>
+        </div>-->
         <div class="promo-full promo-full--orange">
             <div class="container clearfix">
-                <h3 class="text-center">Зарегестрировать в системе</h3>
-                <a href="#" class="btn btn-lg btn-default">зарегестрироваться</a>
+                <h3>Зарегестрируйся и получи доступ <br>к 100 лидам уже сегодня</h3>
+                <a href="registration.html" class="btn btn-lg btn-default">Зарегестрироваться <br> бесплатно</a>
             </div>
         </div>
         <div class="faq">
@@ -411,24 +458,29 @@
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-        		<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        		  Collapsible Group Item #1
-        		</a>
-        		      </h4>
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Как я могу убедиться, что лиды из базы подойдут моей компании? <i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-minus" aria-hidden="true"></i>
+                </a>
+                      </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                <p>Лиды из нашей базы - это:</p>
+                                <ul>
+                                    <li> заказчики, которые понимают экспертность компаний и не хотят работать с фрилансом </li>
+                                    <li> маркеры географии, типа проекта, технологий </li>
+                                    <li> возможность сортировки по платежеспособности и срочности выполнения проекта </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingTwo">
                             <h4 class="panel-title">
-        		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        		  Collapsible Group Item #2
-        		</a>
-        		      </h4>
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+Насколько сложна система конвертации? <i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-minus" aria-hidden="true"></i>
+                </a>
+                      </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="panel-body">
@@ -436,46 +488,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title">
-        		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        		  Collapsible Group Item #3
-        		</a>
-        		      </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="section nobg notopmargin nopadding footer-stick">
+        <div class="container-fluid text-center why">
+            <p class="heading-h1">Почему нам доверяют?</p>
+            
+        </div>
+        <div class="nobg notopmargin nopadding footer-stick">
             <div class="container clearfix">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="assets/images/bottom-trust.jpg" alt="Bottom Trust">
+                        <img src="assets/images/artjoker.png" alt="Bottom Trust">
                     </div>
                     <div class="col-md-6 topmargin-sm">
                         <div class="heading-block nobottomborder">
-                            <h2>Слово Романа Катеринчика</h2>
-                            <span class="ls1">Five Points that define Our Reliability.</span>
+                            <h2>О платформе Leads Exchange</h2>
+                            <span class="ls1"><p>Artjoker - это высокий уровень качества. Наша компания уже 10 лет превращает идеи клиентов в результаты. Мы реализовали более 500 проектов в самых разных бизнес-нишах - web, mobile, marketing и мы прекрасно понимаем боли веб студий в нехватке клиентов, дорогой стоимости привлечения лидов, потраченном времени на нецелевые обращения.</p></span>
                         </div>
-                        <ul class="iconlist iconlist-large iconlist-color">
+                        <!--<ul class="iconlist iconlist-large iconlist-color">
                             <li><i class="fa fa-check" aria-hidden="true"></i> Market Leader since 1915</li>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Positive Results within Deadlines</li>
                             <li><i class="fa fa-check" aria-hidden="true"></i> 100% Reliability &amp; Guarantee</li>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Dedicated Professional Team of 500+</li>
                             <li><i class="fa fa-check" aria-hidden="true"></i> Unmatched After Project Completion Support</li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
+        <!--<div class="container-fluid">
             <div class="row">
                 <div class="col-md-5">
                     <h4>Наши партнеры</h4>
@@ -596,11 +638,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <footer id="footer" class="dark">
+        </div>-->
+        <!--<footer id="footer" class="dark">
             <div class="container-fluid">
-                <!-- Footer Widgets
-				============================================= -->
+               
                 <div class="footer-widgets-wrap clearfix">
                     <div class="col_two_third">
                         <div class="widget clearfix">
@@ -651,12 +692,12 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-6 bottommargin-sm">
                                     <div class="footer-big-contacts">
-                                        <span>Call Us:</span> (91) 22 55412474
+                                        <span>Call Us:</span> <a href="tel:(91) 22 55412474">(91) 22 55412474</a>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-sm-6 bottommargin-sm">
                                     <div class="footer-big-contacts">
-                                        <span>Send an Email:</span> info@canvas.com
+                                        <span>Send an Email:</span> <a href="mailto:info@canvas.com">info@canvas.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -666,35 +707,33 @@
                                 <div class="col-md-6 col-sm-6 clearfix bottommargin-sm">
                                     <a href="#" class="rss">
                                         <div class="rss-wrapper">
-                                        	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.124px" height="96.123px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve">
-                                        	    <g>
-                                        	        <path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
-                                        			c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
-                                        			c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
-                                        			c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" />
-                                        	    </g>
-                                        	</svg>
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.124px" height="96.123px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve">
+                                                <g>
+                                                    <path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+                                                    c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+                                                    c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+                                                    c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" />
+                                                </g>
+                                            </svg>
                                         </div>
-                                        
                                     </a>
                                     <a href="#"><small><strong>Like us</strong><br>on Facebook</small></a>
                                 </div>
                                 <div class="col-md-6 col-sm-6 clearfix">
                                     <a href="#" class="rss">
-                                        
                                         <div class="rss-wrapper rss-wrapper--inverse">
-                                        	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="430.117px" height="430.118px" viewBox="0 0 430.117 430.118" style="enable-background:new 0 0 430.117 430.118;" xml:space="preserve">
-                                        	    <g>
-                                        	        <path id="RSS" d="M97.493,332.473c10.419,10.408,16.755,24.525,16.794,40.244c-0.04,15.687-6.375,29.809-16.755,40.17l-0.04,0.019
-                                        			c-10.398,10.352-24.603,16.681-40.398,16.681c-15.775,0-29.944-6.348-40.34-16.699C6.384,402.526,0,388.422,0,372.717
-                                        			c0-15.719,6.384-29.869,16.754-40.253v0.009c10.401-10.36,24.57-16.735,40.34-16.735C72.89,315.738,87.081,322.131,97.493,332.473z
-                                        			 M97.493,332.464v0.009c0.019,0,0.019,0,0.019,0L97.493,332.464z M16.754,412.906c0,0,0,0,0-0.019c-0.019,0-0.019,0-0.019,0
-                                        			L16.754,412.906z M0.046,146.259v82.129c53.618,0.033,104.328,21.096,142.278,59.104c37.943,37.888,58.917,88.675,59.003,142.477
-                                        			h0.028v0.149h82.467c-0.065-78.233-31.866-149.099-83.279-200.549C149.122,178.126,78.285,146.308,0.046,146.259z M0.196,0v82.089
-                                        			c191.661,0.14,347.464,156.184,347.594,348.028h82.327c-0.056-118.571-48.248-225.994-126.132-303.932
-                                        			C226.073,48.274,118.721,0.051,0.196,0z" />
-                                        	    </g>
-                                        	</svg>
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="430.117px" height="430.118px" viewBox="0 0 430.117 430.118" style="enable-background:new 0 0 430.117 430.118;" xml:space="preserve">
+                                                <g>
+                                                    <path id="RSS" d="M97.493,332.473c10.419,10.408,16.755,24.525,16.794,40.244c-0.04,15.687-6.375,29.809-16.755,40.17l-0.04,0.019
+                                                    c-10.398,10.352-24.603,16.681-40.398,16.681c-15.775,0-29.944-6.348-40.34-16.699C6.384,402.526,0,388.422,0,372.717
+                                                    c0-15.719,6.384-29.869,16.754-40.253v0.009c10.401-10.36,24.57-16.735,40.34-16.735C72.89,315.738,87.081,322.131,97.493,332.473z
+                                                     M97.493,332.464v0.009c0.019,0,0.019,0,0.019,0L97.493,332.464z M16.754,412.906c0,0,0,0,0-0.019c-0.019,0-0.019,0-0.019,0
+                                                    L16.754,412.906z M0.046,146.259v82.129c53.618,0.033,104.328,21.096,142.278,59.104c37.943,37.888,58.917,88.675,59.003,142.477
+                                                    h0.028v0.149h82.467c-0.065-78.233-31.866-149.099-83.279-200.549C149.122,178.126,78.285,146.308,0.046,146.259z M0.196,0v82.089
+                                                    c191.661,0.14,347.464,156.184,347.594,348.028h82.327c-0.056-118.571-48.248-225.994-126.132-303.932
+                                                    C226.073,48.274,118.721,0.051,0.196,0z" />
+                                                </g>
+                                            </svg>
                                         </div>
                                     </a>
                                     <a href="#"><small><strong>Subscribe</strong><br>to RSS Feeds</small></a>
@@ -703,15 +742,21 @@
                         </div>
                     </div>
                 </div>
-                <!-- .footer-widgets-wrap end -->
+                
             </div>
-        </footer>
+        </footer>-->
+    </div>
+    <div class="back-to-top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </div>
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/lightbox.min.js "></script>
     <script src="js/main.js"></script>
 </body>
 
