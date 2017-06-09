@@ -15,11 +15,16 @@
         table-layout: fixed;
         width: 100%;    
         min-height: 100%;   
+        overflow: hidden;
     }
 
     .footer-wr {
         display: table-footer-group;
         width: 100%;    
+    }
+
+    .footer-logo {
+        font-size: 35px;
     }
     
     body {
@@ -67,6 +72,22 @@
             left: 50%;  
             @include translate(-50%, -50%);
         }
+    }
+    #logo {
+        padding: 30px 0;
+    }
+    .standard-logo {
+        display: inline-block;
+        line-height: 30px;
+        &:hover {
+            text-decoration: none;
+            color: #f18052;
+        }
+    }
+    .logo-text {
+        font-size: 15px;
+        line-height: 19px;
+        display: block;
     }
     
     // Top Bar 
@@ -136,6 +157,11 @@
         &-links {
             float: right;
             margin-top: -1px;
+            @media screen and (max-width: 600px) {
+                float: none;
+                margin-top: 0;
+                padding-bottom: 20px;
+            }
         }
     }
     
@@ -145,11 +171,41 @@
         font-size: 14px;
         margin-right: 10px;
     }
+
+    .banner {
+        position: relative;
+        min-height: 700px;
+        /* background-image: url('../assets/images/banner-3.jpg'); */
+        background-size: cover;
+    }
     
     // header
     /* #header.sticky-style-2 {
         height: 161px;
     } */
+
+    .btn-lg {
+        font-size: 20px;
+        padding: 20px 40px;
+        @media screen and (max-width: 600px) {
+            font-size: 18px;
+            padding: 15px 15px;
+        }
+    }
+    .btn-wr {
+        padding: 30px 0;
+    }
+
+    .btn:focus,
+    .btn:active {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.btn-success.dropdown-toggle.focus, .open>.btn-success.dropdown-toggle:focus, .open>.btn-success.dropdown-toggle:hover {
+        background-color: rgba(51,51,51,.8);
+        border: 1px solid #333;
+    }
     
     #header {
         background-color: #F9F9F9;
@@ -160,14 +216,14 @@
         font-size: 36px;
         line-height: 100%;
         margin-right: 40px;
-        @media screen and (max-width: $screen-sm-max) {
+        @media screen and (max-width: 600px) {
             display: block;
             float: none;
             margin: 0 auto!important;
             max-width: none;
             text-align: center;
             border: 0!important;
-            padding: 0!important;
+            padding: 20px 0!important; 
         }
     }
     
@@ -274,12 +330,24 @@
     
     .header-extras {
         float: right;
-        padding: 30px 0;
-        @media screen and (max-width: $screen-sm-max) {
-            display: none;
+        padding: 41px 0;
+        margin-bottom: 0;
+        @media screen and (max-width: 600px) {
+            float: none;
+            text-align: center;
+            padding: 0;
+        }
+        
+    }
+    .interface {
+        padding: 40px 0;
+        @media screen and (max-width: $screen-xs-max) {
+            padding: 20px 0;
+        }
+        img {
+            width: 100%;
         }
     }
-    
     .header-extras li {
         margin-left: 30px;
         padding-left: 30px;
@@ -536,20 +604,14 @@
                 line-height: 40px;
             }
         }
-        h3 {
+        h2 {
             float: left;
-            @media screen and (max-width: $screen-xs-max) {
-                float: none;
-                text-align: center;
-                line-height: 35px;
-            }
+            max-width: 70%;
         }
         .btn {
             float: right;
-            @media screen and (max-width: $screen-xs-max) {
-                float: none;
-            }
         }
+        
     }
     
     .why {
@@ -570,18 +632,49 @@
         top: 150px;
         left: 20%;
         z-index: 20;
-        max-width: 400px;
-        text-align: center;
+        max-width: 600px;
+        
         font-size: 22px;
         font-weight: 300;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
         -webkit-transition: top .3s ease;
         -o-transition: top .3s ease;
         transition: top .3s ease;
+        p {
+            font-weight: 600;   
+        }
+        span {
+            display: block; 
+            margin-bottom: 20px; 
+            font-size: 18px;      
+        }
         @media screen and (max-width: $screen-xs-max) {
             width: 80%;
             left: 20px;
         }
+        @media screen and (max-width: 600px) {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .modal-header {
+        background-color: #f18052;
+        color: #fff;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .modal-body {
+        padding: 25px 20px; 
+    }
+
+    .modal-dialog {
+        position: absolute; 
+        top: 50%;   
+        left: 50%;  
+        margin: 0;  
+        transform: translate(-50%, -50%)!important;
     }
     
     .counter {
@@ -609,9 +702,14 @@
         background-attachment: fixed;
         overflow: hidden;
         padding: 40px 5%;
-        background: rgba(241, 128, 82, 0.9);
+        background-color: rgba(0, 0, 0, 0.6);
         @media screen and (max-width: $screen-xs-max) {
             padding: 20px;
+        }
+        &-item {
+            @media screen and (max-width: 600px) {
+                margin-bottom: 30px;
+            }
         }
         &:after {
             content: '';
@@ -624,6 +722,7 @@
             z-index: 1;
         }
         &-wrapper {
+            font-size: 20px;
             /* position: absolute;
             top: 50%;
             left: 50%;
@@ -635,6 +734,20 @@
                 top: auto;
                 @include translate(0, 0);
             } */
+        }
+        span {
+            display: block;
+            margin-bottom: 30px;
+        }
+        svg {
+            display: inline-block;
+            vertical-align: middle;
+            width: 200px;
+            height: 200px;
+            @media screen and (max-width: 600px) {
+                width: 100px;
+                height: 100px;
+            }
         }
     }
     
@@ -657,6 +770,9 @@
     
     .topmargin-sm {
         margin-top: 30px!important;
+        @media screen and (max-width: 600px) {
+            margin-top: 0 !important;
+        }
     }
     
     .heading-block {
@@ -668,10 +784,13 @@
     }
     
     // features
-    .features {
-        padding-top: 40px;
-    }
     
+    .features {
+        @media screen and (max-width: $screen-xs-max) {
+            padding-bottom: 40px;
+        }
+    }
+
     .feature-box {
         position: relative;
         margin-top: 20px;
@@ -733,6 +852,9 @@
     
     .bottommargin {
         margin-bottom: 50px;
+        @media screen and (max-width: $screen-xs-max) {
+            margin-bottom: 20px;
+        }
     }
     
     .portfolio-item {
@@ -942,8 +1064,11 @@
         }
     }
     
-    .heading-block h2+span {
+    .heading-block {
         font-size: 22px;
+        @media screen and (max-width: 600px) {
+            font-size: 17px;
+        }
     }
     
     .heading-block>span:not(.before-heading) {
@@ -1136,6 +1261,12 @@
             margin-bottom: 20px;
         }
     }
+
+    .widget {
+        @media screen and (max-width: 600px) {
+            text-align: center;
+        }
+    }
     
     //footer 
     #footer.dark,
@@ -1147,7 +1278,7 @@
     
     #footer .footer-widgets-wrap {
         position: relative;
-        padding: 80px 0;
+        padding: 30px 0;
         @media screen and (max-width: $screen-sm-max) {
             padding: 40px 0;
         }
@@ -1248,6 +1379,10 @@
         margin: 5px 20px 13px 0;
         max-width: 100%;
     }
+
+    hr {
+        margin: 10px 0;
+    }
     
     .dark .widget p {
         opacity: .8;
@@ -1258,10 +1393,10 @@
     }
     
     .widget p {
-        padding-bottom: 20px;
-        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        padding-bottom: 10px;
         line-height: 1.7;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        display: inline-block;
     }
     
     .widget img {
