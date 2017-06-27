@@ -105,7 +105,7 @@ $(document).ready(function() {
         return validate($(this).parents(".js_validate"));
     });
 
-    $('.about').parallax({imageSrc: 'assets/images/lead-generation.jpg'});
+    /*$('.about').parallax({imageSrc: 'assets/images/lead-generation.jpg'});*/
     $('.banner').parallax({imageSrc: 'assets/images/banner-3.jpg'});
 
     $('#phone').inputmask("+380 99 999 9999");

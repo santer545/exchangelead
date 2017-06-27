@@ -1,18 +1,62 @@
 .btn {
-	border-radius: 0;
+	height: 55px;
+		line-height: 52px;
+		border: 1px solid #fff;
+		color: #fff;
+		border-radius: 50px;
+		padding: 0 47px;
+		font-size: 16px;
+		font-weight: 300;	
 	@include transition(background-color 0.3s);
 	&-success {
-		background-color: rgba(51,51,51,1);
-		border: 1px solid #333;
-		
+		background-color: #0094ff;
+		border: 1px solid #0094ff;
+		color: #fff;
 		&:hover,
 		&:focus,
 		&:active {
-			background-color: rgba(51,51,51,0.8);
-			border: 1px solid #333;
+			background-color: #0f72b9;
+			color: #fff;
+			border: 1px solid #fff;
 		}
 	}
 	&-warning {
 		background-color: #f18052;
+	}
+	&-default {
+		background-color: transparent;
+		&:hover {
+			background-color: #0f72b9;
+			color: #fff;
+			border: 1px solid #fff;
+		}
+		&--inverse {
+			background-color: #fff;
+			color: #0094ff;
+			border: 1px solid #0094ff;
+		}
+	}
+}
+
+.btn-lg {
+	font-size: 25px;	
+	height: 80px;	
+	line-height: 79px;	
+	padding: 0 70px;	
+	@media screen and (max-width: $screen-sm-max) {
+		padding: 0 40px;	
+	}
+	@media screen and (max-width: $screen-xs-max) {
+		font-size: 19px;	
+		height: 65px;	
+		line-height: 64px;	
+		padding: 0 20px;	
+	}
+}
+
+.btn-padding {
+	padding-top: 12px;	
+	@media screen and (max-width: $screen-md-max) {
+		padding-top: 0;	
 	}
 }
